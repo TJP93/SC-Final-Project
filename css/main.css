@@ -6,4 +6,10 @@ h1 {
   font-weight: 900;
   color: rgb(212, 16, 16);
   display: flex;
+  text-align: center;
+  
+}
+p {
+  text-align: center;
+  border-style: double;
 }
