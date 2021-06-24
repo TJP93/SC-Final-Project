@@ -8,9 +8,14 @@ h1 {
   color: rgb(212, 16, 16);
   display: flex;
   text-align: center;
+  text-decoration: underline;
+  width: 500px;
+  margin: 0 auto;
   
 }
 p {
+  display: flex;
   text-align: center;
   border-style: double;
+  
 }
