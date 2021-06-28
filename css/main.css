@@ -3,19 +3,9 @@ body {
   background-color: rgba(0, 255, 234, 0.11);
 }
 
-h1 {
-  font-weight: 900;
-  color: rgb(212, 16, 16);
-  display: flex;
+div {
+  border: 5px outset rgb(43, 38, 38);
+  background-color: rgb(244, 248, 245);
   text-align: center;
-  text-decoration: underline;
-  width: 500px;
-  margin: 0 auto;
-  
 }
-p {
-  display: flex;
-  text-align: center;
-  border-style: double;
   
-}
