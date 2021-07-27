@@ -1,13 +1,5 @@
 body {
   font-family: "Open Sans";
-  background-color: #a6a8a6; 
-}
-
-h1 {
-  text-decoration: underline;
-}
-
-div {
   border: 15px outset rgb(43, 38, 38);
   background-color: rgb(244, 248, 245);
   text-align: center;
@@ -15,6 +7,10 @@ div {
   padding-top: 15px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+h1 {
+  text-decoration: underline;
 }
 
 img {
