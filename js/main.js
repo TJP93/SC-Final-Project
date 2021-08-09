@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 const images = document.querySelectorAll(".carousel"); // all images for carousel in variable -- nodelist object to be iterated through by loop
 
 
-let imageNumber = 0; // variable to manipulate images shown
+let myVar = 0; // variable to manipulate images shown
 
 
 function myCarousel() {
@@ -16,11 +16,11 @@ function myCarousel() {
     
     images[i].style.display = "none";}
 
-  imageNumber++;
+  myVar++;
 
-  if (imageNumber > images.length) {imageNumber = 1}
+  if (myVar > images.length) {myVar = 1}
 
-  images[imageNumber-1].style.display = "block";
+  images[myVar-1].style.display = "block";
 
   
 }
