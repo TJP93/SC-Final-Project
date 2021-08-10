@@ -10,7 +10,7 @@ const images = document.querySelectorAll(".carousel"); // all images for carouse
 let myVar = 0; // variable to manipulate images shown / restart carousel loop
 
 
-function myCarousel(n) {
+function myCarousel(arg) {
 
   for (let i = 0; i < images.length; i++) {
     
@@ -27,3 +27,7 @@ function myCarousel(n) {
 setInterval(myCarousel, 5000); // set to change image every 5 sec
 
 myCarousel(); // call
+
+function manualImage(arg) {
+  
+}
