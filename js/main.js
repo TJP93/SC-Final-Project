@@ -10,7 +10,7 @@ const images = document.querySelectorAll(".carousel"); // all images for carouse
 let myVar = 0; // variable to manipulate images shown / restart carousel loop
 
 
-function myCarousel() {
+function myCarousel(n) {
 
   for (let i = 0; i < images.length; i++) {
     
@@ -20,7 +20,7 @@ function myCarousel() {
 
   if (myVar > images.length) {myVar = 1}
 
-  images[myVar-1].style.display = "block";
+  images[myVar-1].style.display = "inline";  // block seemed to displace carousel and buttons??
 
   
 }
