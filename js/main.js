@@ -22,12 +22,12 @@ function myCarousel(arg) {
 
   images[myVar-1].style.display = "inline";  // block seemed to displace carousel and buttons??
 
+  if (arg > images.length) {myVar = 1}
+
+  if (arg < 1) {myVar = images.length}
   
 }
 setInterval(myCarousel, 5000); // set to change image every 5 sec
 
 myCarousel(); // call
 
-function manualImage(arg) {
-  
-}
