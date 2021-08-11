@@ -14,21 +14,22 @@ function myCarousel(arg) {
   for (let i = 0; i < images.length; i++) {
     images[i].style.display = "none";
   }
-
+// next button & auto looping
   if (arg > 0 ) {
     myVar++;
     if (myVar > images.length) {myVar = 1};
     images[myVar-1].style.display = "inline"; 
   }
+  //previous button
 if (arg < 0) {
   myVar--;
   if (myVar < 1) {myVar = images.length};
   images[myVar-1].style.display = "inline"; 
 }
-console.log(myVar);
+
 }
 
-myCarousel(1);
+myCarousel(1); // call with argument 1 to set at image index 0
 
 const myTimer = setInterval(() => myCarousel(1), 5000);
 
