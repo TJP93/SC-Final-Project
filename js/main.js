@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 })
 
 const images = document.querySelectorAll(".carousel"); // all images for carousel in variable -- nodelist object to be iterated through by loop
-
+const myTimer = setInterval(() => myCarousel(1), 5000); // inline function as setInterval issue with argument in function directly within, solved using variable
 
 let myVar = 0; // variable to manipulate images shown / restart carousel loop
 
@@ -31,7 +31,7 @@ if (arg < 0) {
 
 myCarousel(1); // call with argument 1 to set at image index 0
 
-const myTimer = setInterval(() => myCarousel(1), 5000);
+
 
 function stopTimer() {
   clearInterval(myTimer);
