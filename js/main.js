@@ -33,6 +33,9 @@ myCarousel(1); // call with argument 1 to set at image index 0
 
 const myTimer = setInterval(() => myCarousel(1), 5000);
 
+function stopTimer() {
+  clearInterval(myTimer);
+}
 
  /* function myCarousel(arg) {
 
