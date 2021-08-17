@@ -1,9 +1,5 @@
 /* insert interactivity here! */
 
-window.addEventListener("load", () => {
-  console.log("where to begin?")
-})
-
 const images = document.querySelectorAll(".carousel"); // all images for carousel in variable -- nodelist object to be iterated through by loop
 const myTimer = setInterval(() => myCarousel(1), 5000); // inline function as setInterval issue with argument in function directly within, solved using variable
 
@@ -37,27 +33,17 @@ if (arg < 0) {
 
 myCarousel(1); // call with argument 1 to set at image index 0
 
+document.addEventListener("keydown", arrowKeys); // works, but double check why event.key did not work, but event.code did?
 
+function arrowKeys(event) {
 
- /* function myCarousel(arg) {
+  if (event.code === "ArrowRight" ) {
 
- for (let i = 0; i < images.length; i++) {
-    
-   images[i].style.display = "none";}
+    myCarousel(1);
+  }
 
-  myVar++;
+  if (event.code === "ArrowLeft") {
 
-  if (myVar > images.length) {myVar = 1}
-
-  images[myVar-1].style.display = "inline";   // block seemed to displace carousel and buttons?? 
-
-  if (arg > images.length) {myVar = 1}
-
-  console.log(myVar)
-
-  if (arg < 1) {myVar = images.length} 
-  
- }
-  setInterval(myCarousel, 5000); // set to change image every 5 sec
-
- myCarousel(); // call */
+    myCarousel(-1);
+  }
+}
