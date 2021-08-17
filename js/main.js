@@ -33,9 +33,9 @@ if (arg < 0) {
 
 myCarousel(1); // call with argument 1 to set at image index 0
 
-document.addEventListener("keydown", arrowKeys); // works, but double check why event.key did not work, but event.code did?
+document.addEventListener("keydown", myKeys); // works, but double check why event.key did not work, but event.code did?
 
-function arrowKeys(event) {
+function myKeys(event) {
 
   if (event.code === "ArrowRight" ) {
 
@@ -45,5 +45,10 @@ function arrowKeys(event) {
   if (event.code === "ArrowLeft") {
 
     myCarousel(-1);
+  }
+
+  if (event.code === "Space") {
+
+    clearInterval(myTimer);
   }
 }
