@@ -1,13 +1,13 @@
 /* insert interactivity here! */
 
 const images = document.querySelectorAll(".carousel"); // all images for carousel in variable -- nodelist object to be iterated through by loop
-const myTimer = setInterval(() => myCarousel(1), 5000); // inline function as setInterval issue with argument in function directly within, solved using variable
+let myTimer = setInterval(() => myCarousel(1), 5000); // inline function as setInterval issue with argument in function directly within, solved using variable
 
- /*function resetTimer() {
+ function resetTimer() {
     clearInterval(myTimer);
     myTimer = setInterval(() => myCarousel(1), 5000);
   }
-*/
+
 
 let myVar = 0; // variable to manipulate images shown / restart carousel loop
 
@@ -21,12 +21,14 @@ function myCarousel(arg) {
     myVar++;
     if (myVar > images.length) {myVar = 1};
     images[myVar-1].style.display = "inline"; 
+      resetTimer();
   }
   //previous button
 if (arg < 0) {
   myVar--;
   if (myVar < 1) {myVar = images.length};
   images[myVar-1].style.display = "inline"; 
+    resetTimer();
 }
 
 }
