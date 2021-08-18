@@ -53,4 +53,10 @@ function myKeys(event) {
 
     clearInterval(myTimer);
   }
+  if (event.code === "Enter") {
+
+    resetTimer()
+  }
 }
+
+// how to have spacebar work as both pause and resume button -- one for future
