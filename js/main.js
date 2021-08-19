@@ -24,7 +24,7 @@ function myCarousel(arg) {
       resetTimer();
   }
   //previous button
-if (arg < 0) {
+  if (arg < 0) {
   myVar--;
   if (myVar < 1) {myVar = images.length};
   images[myVar-1].style.display = "inline"; 
@@ -34,6 +34,8 @@ if (arg < 0) {
 }
 
 myCarousel(1); // call with argument 1 to set at image index 0
+
+// event listener for button interactivity.
 
 document.addEventListener("keydown", myKeys); // works, but double check why event.key did not work, but event.code did?
 
@@ -59,4 +61,4 @@ function myKeys(event) {
   }
 }
 
-// how to have spacebar work as both pause and resume button -- one for future
+// how to have spacebar work as both pause and resume button -- one for future?
