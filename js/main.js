@@ -3,6 +3,12 @@
 const images = document.querySelectorAll(".carousel"); // all images for carousel in variable -- nodelist object to be iterated through by loop
 let myTimer = setInterval(() => myCarousel(1), 5000); // inline function as setInterval issue with argument in function directly within, solved using variable
 
+// variables for buttons & event listeners
+const previousButton = document.querySelector('#prevbutton');
+const pauseButton = document.querySelector('#pausebutton');
+const resumeButton = document.querySelector('#resumebutton');
+const nextButton = document.querySelector('#nextbutton');
+
  function resetTimer() {
     clearInterval(myTimer);
     myTimer = setInterval(() => myCarousel(1), 5000);
@@ -35,7 +41,7 @@ function myCarousel(arg) {
 
 myCarousel(1); // call with argument 1 to set at image index 0
 
-// event listener for button interactivity.
+// event listener for button interactivity with keyboard
 
 document.addEventListener("keydown", myKeys); // works, but double check why event.key did not work, but event.code did?
 
@@ -62,3 +68,13 @@ function myKeys(event) {
 }
 
 // how to have spacebar work as both pause and resume button -- one for future?
+
+// event listeners for clicking buttons - replaced onlick in html
+
+previousButton.addEventListener('click', () => myCarousel(-1));
+
+pauseButton.addEventListener('click', () => clearInterval(myTimer));
+
+resumeButton.addEventListener('click', () => resetTimer());
+
+nextButton.addEventListener('click', () => myCarousel(1));
