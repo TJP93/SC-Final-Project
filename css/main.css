@@ -14,8 +14,8 @@ h1 {
 }
 
 img {
-  max-width: 60vh;
-  max-height:60vh;
+  max-width: 600px;
+  max-height:auto;
   border: 3px solid black;
 }
 
