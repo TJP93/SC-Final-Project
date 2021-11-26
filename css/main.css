@@ -9,13 +9,19 @@ body {
   padding-left: 15px;
 }
 
+.container{
+width: 80%;
+margin:auto;
+overflow:hidden;
+}
+
 header {
   text-decoration: underline;
 }
 
 img {
-  max-width: 600px;
-  max-height:auto;
+  width: 70%;
+  height:auto;
   border: 3px solid black;
 
 }
@@ -28,6 +34,8 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  width: 45%;
+  margin: 1.5px;
 }
 
 ul.no-bullets {
