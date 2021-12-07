@@ -67,9 +67,8 @@ function myKeys(event) {
   }
 }
 
-// how to have spacebar work as both pause and resume button -- one for future?
 
-// event listeners for clicking buttons - replaced onlick in html (double check why needed inline func)
+// event listeners for clicking buttons 
 
 previousButton.addEventListener('click', () => myCarousel(-1));
 
