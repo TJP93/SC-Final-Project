@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans";
+  font-family: Helvetica, Arial, sans-serif, "Open Sans";
   font-size: large;
   border: 15px outset rgb(0, 0, 0);
   background-color: rgb(244, 248, 245);
@@ -43,8 +43,10 @@ button {
   
 }
 
+@media (hover: hover) {
 button:hover {
   background-color: whitesmoke;
+}
 }
 
 a:hover {
