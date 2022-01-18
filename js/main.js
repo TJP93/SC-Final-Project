@@ -43,7 +43,7 @@ myCarousel(1); // call with argument 1 to set at image index 0
 
 // event listener for button interactivity with keyboard
 
-document.addEventListener("keydown", myKeys); // works, but double check why event.key did not work, but event.code did?
+document.addEventListener("keydown", myKeys); 
 
 function myKeys(event) {
 
